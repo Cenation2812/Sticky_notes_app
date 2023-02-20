@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+
+.message_container{
+    height: 40px;
+    width: 200px;
+    background-color: red;
+    /* margin-left: 100%; */
+    /* margin-top: 10px; */
+    border-radius: 15px;
+    box-shadow: 0 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+    position: relative;
+    left: 1490px;
+    display: none;
+    transition: .3s;
+}
+
+.control_section{
+    height: 12vh;
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* column-gap: 8px; */
+}
+
+.header{
+    height: 90%;
+    width: 40%;
+    /* background-color: yellow; */
+    /* font-size: 100px; */
+    padding: 19px 15px;
+}
+
+.controls{
+    height: 90%;
+    width: 40%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.add_icon_container{
+    /* background-color: red; */
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.sticky_notes_section{
+    height: 600px;
+    width: 100%;
+    /* background-color: purple; */
+}
+
+.sticky_note_container{
+    height: 500px;
+    width: 100%;
+    /* background-color: orange; */
+    padding: 10px 10px;
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.sticky_note{
+    height: 70%;
+    width: 20%;
+    background-color: yellow;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px;
+}
+
+.note_title{
+    height: 20%;
+    width: 100%;
+    padding: 10px 10px;
+    /* background-color: brown; */
+}
+
+.title_inp{
+    /* height: 100%; */
+    width: 80%;
+    background-color: transparent;
+    border: transparent;
+}
+
+.note_desc{
+    height: 70%;
+    width:70%;
+    /* background-color: pink; */
+    padding: 20px 20px;
+}
+
+.textarea{
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
+    border: transparent;
+    resize: none;
+}
+
+.textarea:focus{
+    outline: none;
+}
+
+.delete_icon{
+    padding-left: 20px;
+    cursor: pointer;
+    padding-right: 10px;
+    transition: .3s;
+}
+
+.delete_icon:hover{
+    transform: scale(1.1);
+}
+
+.confirmIcon{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.confirmIcon:hover{
+    transform: scale(1.1);
+}
+
+.create_note_container{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: none;
+}
+
+.title_inp::placeholder{
+    padding: 5px;
+}
